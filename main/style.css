@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background-color: #08605F;
+    width: 100vw;
+    text-align: center;
+    padding: 30px 0;   
+    font-size: 1.5em; 
+    color: white;
+}
+.showcase {
+    background-color: #177E89;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    padding: 10px 5%;
+}
+.box {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#containerText {
+    background-color: lightgray;
+    margin: 20px;
+    padding: 10px;
+    width: 95%;
+}
+#originalText {
+    font-size: 1.2em;
+    line-height: 1.4;
+    padding: 5px;
+}
+#test-wrapper{
+    border: 10px solid;
+    border-color: grey;
+    border-radius: 10px;
+    max-height: 300px;
+    min-width: 400px;
+}
+#textArea {
+    resize: none;
+    padding: 8px;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+#textArea[placeholder]{
+    font-family: 'Roboto', sans-serif;
+}
+.just {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px;
+}
+#timer {
+    font-size: 2em;
+    line-height: 0;
+    font-weight: bolder;
+}
+#reset,#error {
+    border: 5px solid orange;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color,color .5s ease-in;
+}
+#reset:hover,#error:hover {
+    color: white;
+    background-color: orange;
+}
+
+
+@media (min-width:768px){
+    .showcase {
+        padding: 30px 20%;
+        font-size: 1.4em;   
+    }
+    #timer {
+        font-size: 3em;
+    }
+    #reset,#error {
+        border: 10px solid orange;
+        font-size: 1.5em;
+    }
+}

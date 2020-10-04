@@ -56,10 +56,11 @@ function spellchecker(){
 
 // Reset Function
 function reset(){
+    clearInterval(interval);
     timer = [0,0,0,0];
-    interval = null;
     timeRunning = false;
-
+    interval = null;
+    errorText = 0;
     theTimer.innerHTML = "00:00:00";
     textWrapper.style.borderColor = "grey";
     textArea.value = "";
@@ -70,6 +71,7 @@ function error(){
     textWrapper.style.borderColor = "grey";
     textArea.value = `You got ${errorText} error(s)! Press Start Over to TRY AGAIN...`;
     clearInterval(interval);
+    errorText = 0;
 }
 textArea.addEventListener('keypress',start,false);
 textArea.addEventListener('keyup',spellchecker,false);

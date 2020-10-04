@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-min.css">
+    <title>JS Type Speed</title>
+</head>
+<body>
+<!-- header -->
+<header class="header">
+    <h1>Typing Speed Test</h1>
+</header>
+<!-- end header -->
+<section class="showcase">
+    <p>This is a typing  test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. Good Luck!</p>
+</section>
+
+<!-- box -->
+<div class="box">
+    <div id="containerText">
+        <p id="originalText">James Carlos Agravante Yap Sr. is a Filipino professional basketball player for the Rain or Shine Elasto Painters of the Philippine Basketball Association. Known by his nickname Big Game James, he had played for the Star Hotshots for twelve seasons winning seven PBA championships before being traded on 2016</p>
+    </div>
+    <div id="test-wrapper">
+        <textarea name="textArea" id="textArea" cols="80" rows="10" placeholder="The clock starts when you start typing"></textarea>
+    </div>
+    <div class="just">
+        <p id="timer">00:00:00</p>
+        <button id="reset">Start Over</button>
+        <button id="error">Check Error</button>
+    </div>
+</div>
+<!-- end box -->
+    <script src="app-js-min.js"></script>
+</body>
+</html>
